@@ -1,0 +1,70 @@
+.container_christmas {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    /*font-weight: 700;*/
+    background-image: url("kamin-i-novogodnyaya-elka-oboi-3554x1999_53.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 100%;
+    height: 83vh;
+    border: 4px solid white;
+    margin-top: 100px;
+
+}
+
+.countdown__item {
+    margin: 0 auto;
+    background-color: #FFFFE0;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #8B4513;
+    /*text-shadow: white 2px 3px 4px;*/
+    text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0,
+    #cad5e2 3px 3px 0, #cad5e2 4px 4px 0,
+    #cad5e2 5px 5px 0;;
+}
+
+.countdown__time {
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #BDB76B;
+    font-size: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.finish {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 97vh;
+    font-size: 50px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.days, .minutes, .seconds, .hours {
+    text-shadow: #fff -1px -1px 0,
+    #333 1px 1px 0;
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Own Site</title>
+    <meta name="google" content="notranslate" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="list/styles.css">
+    <link rel="stylesheet" href="analogClockBlock/styles.css">
+    <link rel="stylesheet" href="cristmasEveBlock/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="today"><div class="dateToday">Текущая погода</div>
+            <div class="main_block">
+                <div class="name">Погода в Минске сейчас</div>
+                <div class="container__main">
+                    <div class="firstPart">
+                        <div class="currentTempDay"></div>
+                        <div class="icon">
+                            <img class="todayImg">
+                            <div class="currentTempFeeling"></div>
+                        </div>
+                    </div>
+                    <div class="maxTempToday"></div>
+                </div>
+            </div>
+            <div class="footer__today">
+                <div class="current">
+                    <div class="text">Скорость ветра</div>
+                    <div class="currentSpeedWind" ></div>
+                </div>
+                <div class="current">
+                    <div class="text">Давление</div>
+                    <div class="currentPressure" ></div>
+                </div>
+                <div class="current">
+                    <div class="text">Влажность</div>
+                    <div class="currenHumidity" > </div>
+                </div>
+            </div>
+        </div>
+        <div id='clock'>Тут будет текущее время</div> <br>
+        <canvas height='480' width='480' id='myCanvas'></canvas>
+    </div>
+    <div class="nextDays" >
+        <div class="today__block">
+            <div class="head_todayBlock">
+                <div class="date0"></div>
+                <div class="numDay0">Gn</div>
+            </div>
+                <div class="part">
+                    <img class="img0">
+                    <div class="temp">
+                        <div class="tempDay0"></div>
+                        <div class="tempNight0"></div>
+                    </div>
+                </div>
+            </div>
+        <div class="today__block">
+            <div class="head_todayBlock">
+                <div class="date1"></div>
+                <div class="numDay1">Gn</div>
+            </div>
+            <div class="part">
+                <img class="img1">
+                <div class="temp">
+                    <div class="tempDay1"></div>
+                    <div class="tempNight1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="today__block">
+            <div class="head_todayBlock">
+                <div class="date2"></div>
+                <div class="numDay2">Gn</div>
+            </div>
+            <div class="part">
+                <img class="img2">
+                <div class="temp">
+                    <div class="tempDay2"></div>
+                    <div class="tempNight2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="today__block">
+            <div class="head_todayBlock">
+                <div class="date3"></div>
+                <div class="numDay3">Gn</div>
+            </div>
+            <div class="part">
+                <img class="img3">
+                <div class="temp">
+                    <div class="tempDay3"></div>
+                    <div class="tempNight3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container__study">
+    <div class="text__study">Расписание на сегодня</div>
+    <div class="list">
+        <div class="block">
+            <div class="time">
+                <div class="timeStart"></div>
+                <div class="timeEnd"></div>
+            </div>
+            <div class="subject">
+                <div class="name0"></div>
+                <div class="lessonType"></div>
+            </div>
+        </div>
+        <div class="lastBlock">
+            <div class="audience"></div>
+            <div class="teacher"></div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="block">
+            <div class="time">
+                <div class="timeStart1"></div>
+                <div class="timeEnd1"></div>
+            </div>
+            <div class="subject">
+                <div class="name1"></div>
+                <div class="lessonType1"></div>
+            </div>
+        </div>
+        <div class="lastBlock">
+            <div class="audience1"></div>
+            <div class="teacher1"></div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="block">
+            <div class="time">
+                <div class="timeStart2"></div>
+                <div class="timeEnd2"></div>
+            </div>
+            <div class="subject">
+                <div class="name2"></div>
+                <div class="lessonType2"></div>
+            </div>
+        </div>
+        <div class="lastBlock">
+            <div class="audience2"></div>
+            <div class="teacher2"></div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="block">
+            <div class="time">
+                <div class="timeStart3"></div>
+                <div class="timeEnd3"></div>
+            </div>
+            <div class="subject">
+                <div class="name3"></div>
+                <div class="lessonType3"></div>
+            </div>
+        </div>
+        <div class="lastBlock">
+            <div class="audience3"></div>
+            <div class="teacher3"></div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="block">
+            <div class="time">
+                <div class="timeStart4"></div>
+                <div class="timeEnd4"></div>
+            </div>
+            <div class="subject">
+                <div class="name4"></div>
+                <div class="lessonType4"></div>
+            </div>
+        </div>
+        <div class="lastBlock">
+            <div class="audience4"></div>
+            <div class="teacher4"></div>
+        </div>
+    </div>
+</div>
+<div class="container_christmas">
+    <h1 class="countdown__title">Christmas Eve</h1>
+
+    <div id="countdown" class="countdown">
+        <div class="countdown__item">
+            <div class="days countdown__time"></div>
+            <div class="text__countdown">Days</div>
+        </div>
+        <div class="countdown__item">
+            <div class="hours countdown__time"></div>
+            <div class="text__countdown">Hours</div>
+        </div>
+        <div class="countdown__item">
+            <div class="minutes countdown__time"></div>
+            <div class="text__countdown">Minutes</div>
+        </div>
+        <div class="countdown__item">
+            <div class="seconds countdown__time"></div>
+            <div class="text__countdown">Seconds</div>
+        </div>
+    </div>
+
+
+
+    <div class="finish">
+        <div class="finish__title">Happy New Year!</div>
+    </div>
+</div>
+
+
+<script src="weatherApp.js"></script>
+<script src="analogClockBlock/clockApp.js"></script>
+<script src="list/app.js"></script>
+<script src="cristmasEveBlock/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-size: 24px;
+    font-family: cursive;
+    background-color: peru;
+}
+
+.container__study {
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 4px solid white;
+}
+
+.text__study {
+    color: white;
+    padding-bottom: 10px;
+    background-color: crimson;
+    padding-left: 10px;
+    font-size: 28px;
+    border-bottom: 4px solid white ;
+}
+
+.list {
+    /*margin-top: 10px;*/
+    width: 100%;
+    /*height: 97vh;*/
+    display: flex;
+    justify-content: space-between;
+    background-color: crimson;
+}
+
+.time {
+    display: block;
+    font-size: 14px;
+}
+
+.block {
+    display: flex;
+    margin-left: 10px;
+}
+
+.subject {
+    display: flex;
+    margin-left: 20px;
+}
+
+.timeStart, .timeStart1, .timeStart2, .timeStart3, .timeStart4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.lastBlock {
+    display: block;
+    margin-right: 10px;
+}
+
+.teacher, .teacher1, .teacher2, .teacher3, .teacher4 {
+    font-size: 16px;
+}
