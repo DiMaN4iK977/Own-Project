@@ -5,9 +5,8 @@ let clockSeconds = document.querySelector('.seconds');
 let newYearTime = document.querySelector('.finish');
 let countdownBody = document.querySelector('.countdown');
 
-newYearTime.classList.add('hidden');
-
-let futureDate = new Date('1 Jan, 2023').getTime();
+ let currentYear = new Date().getFullYear();
+ let futureDate = new Date(currentYear+1,0,1).getTime();
 
 
 
@@ -37,10 +36,5 @@ let timerID = setInterval(function () {
         clockHour.innerHTML = `${hours}`;
         clockMinutes.innerHTML = `${minutes}`;
         clockSeconds.innerHTML = `${seconds}`;
-
-        if(time === 0) {
-            countdownBody.classList.add("hidden");
-            newYearTime.classList.remove("hidden");
-        }
     }
 , 1000);
