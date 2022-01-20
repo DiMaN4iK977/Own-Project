@@ -7,7 +7,7 @@ let countdownBody = document.querySelector('.countdown');
 
 newYearTime.classList.add('hidden');
 
-let futureDate = new Date('1 Jan, 2022').getTime();
+let futureDate = new Date('1 Jan, 2023').getTime();
 
 
 
